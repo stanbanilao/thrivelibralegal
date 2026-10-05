@@ -179,7 +179,7 @@ h1 em{font-style:normal;color:var(--emerald-2);position:relative}
 .button-large{min-height:60px;padding:0 28px}
 
 .site-footer{background:#041319;color:#fff;padding:65px 0 30px;border-top:1px solid rgba(255,255,255,.07)}
-.footer-main{display:grid;grid-template-columns:1.5fr repeat(3,1fr);gap:60px}
+.footer-main{display:grid;grid-template-columns:1.4fr repeat(3,.8fr) 1.2fr;gap:48px}
 .footer-brand p{color:#7b929a;font-size:12px;max-width:300px;margin-top:22px}
 .footer-main h3{font-family:Inter,ui-sans-serif,sans-serif;font-size:9px;text-transform:uppercase;letter-spacing:.17em;color:#6f8f98;margin-bottom:18px}
 .footer-main>div>a:not(.brand){display:block;color:#a9b9be;font-size:11px;margin:12px 0}
@@ -200,7 +200,7 @@ h1 em{font-style:normal;color:var(--emerald-2);position:relative}
   .floating-goal{left:0}.floating-plan{right:0}
   .feature-band{grid-template-columns:1fr}.feature-metrics{grid-template-columns:repeat(3,1fr)}
   .service-grid{grid-template-columns:1fr 1fr}
-  .footer-main{grid-template-columns:1.3fr 1fr 1fr}.footer-main>div:last-child{grid-column:2/-1}
+  .footer-main{grid-template-columns:1.3fr 1fr 1fr}.footer-main>div:last-child{grid-column:1/-1}
 }
 @media(max-width:850px){
   .nav-shell{min-height:76px}
@@ -252,3 +252,14 @@ h1 em{font-style:normal;color:var(--emerald-2);position:relative}
   .legal-card{padding:30px}
   .legal-card h1{font-size:42px}
 }
+/* Contact + WhatsApp */
+.footer-contact address{font-style:normal;color:#a9b9be;font-size:11px;line-height:1.7;margin:14px 0 0}
+.footer-contact .move-note{color:#7b929a;font-size:10px;line-height:1.7;margin:12px 0 0}
+.footer-contact .move-note strong{color:var(--gold);font-weight:600}
+.wa-link{display:inline-flex!important;align-items:center;gap:9px;color:#fff!important;font-size:12px!important;font-weight:600}
+.wa-icon{width:20px;height:20px;flex:none}
+.wa-link:hover span{color:#25D366}
+.wa-float{position:fixed;right:22px;bottom:22px;z-index:60;width:54px;height:54px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 12px 30px rgba(4,19,25,.28);transition:transform .25s ease}
+.wa-float .wa-icon{width:34px;height:34px}
+.wa-float:hover{transform:translateY(-3px)}
+@media (max-width:640px){.wa-float{right:16px;bottom:16px;width:50px;height:50px}}
