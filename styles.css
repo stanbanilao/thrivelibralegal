@@ -263,3 +263,43 @@ h1 em{font-style:normal;color:var(--emerald-2);position:relative}
 .wa-float .wa-icon{width:34px;height:34px}
 .wa-float:hover{transform:translateY(-3px)}
 @media (max-width:640px){.wa-float{right:16px;bottom:16px;width:50px;height:50px}}
+
+/* Contact section */
+.contact-section{background:var(--ivory);padding:96px 0;border-top:1px solid var(--line)}
+.contact-layout{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+.contact-layout h2{font-size:42px;color:#0d2831;margin:0 0 16px}
+.contact-layout p{color:var(--muted);max-width:440px}
+.contact-cards{display:grid;gap:14px}
+.contact-card{display:flex;gap:16px;align-items:flex-start;background:#fff;border:1px solid #e3e0d6;padding:22px 24px;transition:.22s ease}
+a.contact-card:hover{transform:translateY(-2px);box-shadow:var(--shadow)}
+.contact-card .wa-icon{width:28px;height:28px}
+.contact-card small{display:block;font-size:9px;letter-spacing:.17em;text-transform:uppercase;color:var(--muted);font-weight:800;margin-bottom:4px}
+.contact-card strong{color:#0d2831;font-size:15px}
+.contact-card em{display:block;font-style:normal;color:#9a8146;font-size:12px;margin-top:6px}
+.contact-pin{width:28px;height:28px;flex:none;border-radius:50%;border:1px solid #cfe5dc;color:var(--emerald-dark);display:flex;align-items:center;justify-content:center}
+.contact-cards .button-dark{margin-top:6px;justify-self:start}
+@media (max-width:860px){.contact-layout{grid-template-columns:1fr;gap:36px}.contact-layout h2{font-size:32px}}
+
+/* Assessment form */
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px 20px;margin-top:28px}
+.field{display:flex;flex-direction:column;gap:7px}
+.field.full{grid-column:1/-1}
+.field label,.field legend{font-size:11px;font-weight:800;color:#0d2831;letter-spacing:.02em}
+.field input,.field select,.field textarea{font:inherit;font-size:14px;padding:13px 14px;border:1px solid #d9d6cb;border-radius:3px;background:#fcfbf8;color:var(--text);transition:.2s}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--emerald);box-shadow:0 0 0 3px rgba(50,214,155,.15);background:#fff}
+fieldset.field{border:0;padding:0;margin:0}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips label{font-weight:600;font-size:12px;border:1px solid #d9d6cb;border-radius:999px;padding:9px 14px;cursor:pointer;background:#fcfbf8;color:#33464d}
+.chips input{position:absolute;opacity:0;pointer-events:none}
+.chips label:has(input:checked){background:#0a222a;color:#fff;border-color:#0a222a}
+.chips label:has(input:focus-visible){box-shadow:0 0 0 3px rgba(50,214,155,.3)}
+.consent{display:flex;gap:12px;align-items:flex-start;font-size:12px;color:#5e7077;line-height:1.6}
+.consent input{margin-top:3px;accent-color:var(--emerald-dark)}
+.form-actions{display:flex;flex-wrap:wrap;gap:16px;align-items:center;margin-top:30px}
+.form-actions .button{border:0;cursor:pointer;font-family:inherit}
+.form-note{font-size:11px;color:var(--muted)}
+.form-error{color:#b3412e;font-size:12px;font-weight:700;display:none}
+.form-success{display:none;text-align:center;padding:30px 0}
+.form-success .tick{width:58px;height:58px;border-radius:50%;margin:0 auto 18px;background:rgba(50,214,155,.12);color:var(--emerald-dark);display:flex;align-items:center;justify-content:center;font-size:26px}
+.is-sent form{display:none}.is-sent .form-success{display:block}
+@media (max-width:640px){.form-grid{grid-template-columns:1fr}.legal-card{padding:32px 22px}.legal-card h1{font-size:36px}}
