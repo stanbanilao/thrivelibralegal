@@ -301,3 +301,5 @@ fieldset.field{border:0;padding:0;margin:0}
 @media (max-width:640px){.form-grid{grid-template-columns:1fr}.legal-card{padding:32px 22px}.legal-card h1{font-size:36px}}
 
 .legal-logo{display:block;margin-bottom:26px}.legal-logo img{display:block;height:auto;max-width:70%}
+
+.tel-link{display:flex!important;width:max-content;margin-top:14px;align-items:center;gap:9px;color:#fff!important;font-size:12px!important;font-weight:600;margin-bottom:2px}.tel-icon{width:20px;height:20px;border-radius:50%;border:1px solid rgba(98,227,179,.5);color:var(--emerald-2);display:inline-flex;align-items:center;justify-content:center;font-size:11px}
